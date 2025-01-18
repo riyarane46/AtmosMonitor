@@ -6,7 +6,7 @@ export default function WeekForecast({ data }) {
 
     return (
         <div className="week-forecast-container">
-            <h2 className="forecast-title">7-Day Forecast</h2>
+            <h2 className="forecast-title">Forecast</h2>
             <div className="forecast-grid">
                 {data.map((day, index) => (
                     <div className="forecast-card" key={index}>

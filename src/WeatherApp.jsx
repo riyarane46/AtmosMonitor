@@ -64,8 +64,8 @@ export default function WeatherApp() {
 
     let updateInfo = async (city) => {
         try {
-            // Get coordinates first
-            const geoUrl = `http://api.openweathermap.org/geo/1.0/direct?q=${city}&limit=1&appid=${API_KEY}`;
+            // Update the URL to use HTTPS
+            const geoUrl = `https://api.openweathermap.org/geo/1.0/direct?q=${city}&limit=1&appid=${API_KEY}`;
             const geoResponse = await fetch(geoUrl);
             const geoData = await geoResponse.json();
             

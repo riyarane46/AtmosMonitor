@@ -1,0 +1,50 @@
+
+.location-container {
+    width: 70%;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.location-button {
+    background: rgba(255, 255, 255, 0.9);
+    border: none;
+    padding: 12px 25px;
+    border-radius: 50px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 1.1rem;
+    color: #2196f3;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.location-button:hover {
+    background: #2196f3;
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(33, 150, 243, 0.3);
+}
+
+.location-button:disabled {
+    background: rgba(255, 255, 255, 0.7);
+    cursor: not-allowed;
+    color: #888;
+}
+
+.location-icon {
+    width: 24px;
+    height: 24px;
+}
+
+.location-error {
+    margin-top: 10px;
+    color: #ff3d3d;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 8px 16px;
+    border-radius: 8px;
+    font-weight: 500;
+}

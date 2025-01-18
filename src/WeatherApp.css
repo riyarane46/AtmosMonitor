@@ -1,0 +1,48 @@
+.weather-app-container {
+    padding: 20px 0;
+}
+
+.title-container {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.weather-title {
+    font-size: 90px;
+    font-weight: 700;
+    color: black;
+    text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.3);
+    letter-spacing: 2px;
+    margin: 0;
+    padding: 20px 0;
+    position: relative;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.title-underline {
+    display: block;
+    width: 200px;
+    height: 4px;
+    background: linear-gradient(90deg, transparent, #fff, transparent);
+    margin: 10px auto;
+    border-radius: 2px;
+}
+
+@keyframes titleGlow {
+    0% { text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.3); }
+    50% { text-shadow: 2px 2px 20px rgba(0, 0, 0, 0.5); }
+    100% { text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.3); }
+}
+
+.weather-title {
+    animation: titleGlow 3s infinite;
+}
+
+
+/* .heading {
+    text-align: center;
+    font-size: 100px;
+    font-weight: 600;
+    margin-top: 10px;
+    margin-bottom: 30px;
+} */

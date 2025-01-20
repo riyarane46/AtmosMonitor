@@ -1,7 +1,7 @@
 import "./InfoBox.css";
 
 export default function InfoBox({info}) {
-    const HOT_URL = "https://advancepainting.com.au/wp-content/uploads/sunshine.png";
+    const HOT_URL = "https://static.vecteezy.com/system/resources/previews/044/173/747/non_2x/clear-sky-sunny-weather-green-grass-beautiful-landscape-photo.jpeg";
     const MIST_URL = "https://images.pexels.com/photos/167699/pexels-photo-167699.jpeg?cs=srgb&dl=pexels-lum3n-44775-167699.jpg&fm=jpg";
     const COLD_URL = "https://www.shutterstock.com/image-photo/winter-forest-south-park-sofia-600nw-2483073899.jpg";
 
@@ -10,7 +10,9 @@ export default function InfoBox({info}) {
             <div className="weather-card">
                 <div className="image-section">
                     <img src={
-                        info.temp > 20 ? HOT_URL : info.temp < 10 ? COLD_URL : MIST_URL
+                        info.temp > 28 ? HOT_URL :
+                        info.temp > 18 ? MIST_URL :
+                        COLD_URL
                     } 
                     alt="weather icon" />
                 </div>
